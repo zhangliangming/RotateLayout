@@ -17,7 +17,7 @@
 2.app build.gradle
 
 `dependencies {
-	         compile 'com.github.zhangliangming:RotateLayout:+'
+	         compile 'com.github.zhangliangming:RotateLayout:v1.6'
 	}`
 
 # 第一种调用用法 #
