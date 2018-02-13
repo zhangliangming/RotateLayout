@@ -6,8 +6,6 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.Display;
 import android.view.LayoutInflater;
@@ -155,7 +153,7 @@ public class RotateLayout extends LinearLayout {
         init(context);
     }
 
-    public RotateLayout(Context context, @Nullable AttributeSet attrs) {
+    public RotateLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
     }
@@ -189,7 +187,6 @@ public class RotateLayout extends LinearLayout {
         // 加载完成后回调
         getViewTreeObserver().addOnGlobalLayoutListener(
                 new ViewTreeObserver.OnGlobalLayoutListener() {
-                    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
                     @Override
                     public void onGlobalLayout() {
                         getViewTreeObserver()
