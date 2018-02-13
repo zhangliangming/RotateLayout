@@ -1,5 +1,6 @@
 # 简介 #
-该RotateLayout的功能，主要是仿照酷狗ios版本的旋转界面功能来实现，目前主要实现了左旋转和右旋转。
+该RotateLayout的功能，主要是仿照酷狗ios版本的旋转界面功能来实现，目前主要实现了左旋转和右旋转，该功能主要是在我的乐乐音乐播放器里面使用，其项目地址如下：
+https://github.com/zhangliangming/HappyPlayer5.git 。
 # 截图 #
 
 ![](https://i.imgur.com/uDlWQoK.png)
