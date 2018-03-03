@@ -1,6 +1,11 @@
 # 简介 #
 该RotateLayout的功能，主要是仿照酷狗ios版本的旋转界面功能来实现，目前主要实现了左旋转和右旋转，该功能主要是在我的乐乐音乐播放器里面使用，其项目地址如下：
 https://github.com/zhangliangming/HappyPlayer5.git 。
+
+# 日志 #
+## v1.0 ##
+1. 实现左旋转和右旋转关闭界面功能
+
 # 截图 #
 
 ![](https://i.imgur.com/uDlWQoK.png)
@@ -20,6 +25,9 @@ https://github.com/zhangliangming/HappyPlayer5.git 。
 `dependencies {
 	         compile 'com.github.zhangliangming:RotateLayout:v1.6'
 	}`
+
+# 调用Demo #
+链接: https://pan.baidu.com/s/1pMXX4lP 密码: y6p7
 
 # 第一种调用用法 #
 1. AndroidManifest.xml
@@ -60,9 +68,7 @@ https://github.com/zhangliangming/HappyPlayer5.git 。
 - setContentView：默认是添加LinearLayout布局的view，contentViewType有两种：CONTENTVIEWTYPE_LINEARLAYOUT（LinearLayout类型） / CONTENTVIEWTYPE_RELATIVELAYOUT（RelativeLayout类型）
 - setDragType：设置右旋转关闭（LEFT_TO_RIGHT）/左旋转关闭（RIGHT_TO_LEFT）/全部
 - RotateLayoutListener：需要在view关闭时，关闭activity时使用
-# 日志 #
-## v1.0 ##
-1. 实现左旋转和右旋转关闭界面功能
+
 
 # 捐赠 #
 如果该项目对您有所帮助，欢迎您的赞赏
