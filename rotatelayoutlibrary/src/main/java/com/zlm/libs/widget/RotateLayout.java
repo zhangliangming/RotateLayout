@@ -240,7 +240,7 @@ public class RotateLayout extends LinearLayout {
         }
         invalidate();
         if (mRotateAnimatorListener != null) {
-            mRotateAnimatorListener.rotateUpdate(mRotateLayout.getRotation());
+            mRotateAnimatorListener.rotateUpdate(mPivotX, mPivotY, mRotateLayout.getRotation());
         }
     }
 
@@ -628,6 +628,6 @@ public class RotateLayout extends LinearLayout {
     }
 
     public interface RotateAnimatorListener {
-        void rotateUpdate(float degree);
+        void rotateUpdate(float pivotX, float pivotY, float degree);
     }
 }

@@ -4,8 +4,9 @@ https://github.com/zhangliangming/HappyPlayer5.git 。
 
 # 日志 #
 
-## v1.7 ##
+## v1.8 ##
 1. 添加了旋转角度回调事件
+2. 添加了旋转角度的旋转中心坐标
 
 ## v1.0 ##
 1. 实现左旋转和右旋转关闭界面功能
@@ -27,7 +28,7 @@ https://github.com/zhangliangming/HappyPlayer5.git 。
 2.app build.gradle
 
 `dependencies {
-	         compile 'com.github.zhangliangming:RotateLayout:v1.6'
+	         compile 'com.github.zhangliangming:RotateLayout:v1.8'
 	}`
 
 # 调用Demo #
