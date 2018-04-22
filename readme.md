@@ -3,6 +3,10 @@
 https://github.com/zhangliangming/HappyPlayer5.git 。
 
 # 日志 #
+
+## v1.7 ##
+1. 添加了旋转角度回调事件
+
 ## v1.0 ##
 1. 实现左旋转和右旋转关闭界面功能
 

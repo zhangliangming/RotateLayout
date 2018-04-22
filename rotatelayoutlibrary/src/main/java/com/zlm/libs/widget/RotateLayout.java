@@ -148,6 +148,8 @@ public class RotateLayout extends LinearLayout {
 
     private RotateLayoutListener mRotateLayoutListener;
 
+    private RotateAnimatorListener mRotateAnimatorListener;
+
     public RotateLayout(Context context) {
         super(context);
         init(context);
@@ -237,6 +239,9 @@ public class RotateLayout extends LinearLayout {
             mRotateLayout.setRotation(degree);
         }
         invalidate();
+        if (mRotateAnimatorListener != null) {
+            mRotateAnimatorListener.rotateUpdate(mRotateLayout.getRotation());
+        }
     }
 
     @Override
@@ -614,7 +619,15 @@ public class RotateLayout extends LinearLayout {
         this.mRotateLayoutListener = rotateLayoutListener;
     }
 
+    public void setmRotateAnimatorListener(RotateAnimatorListener mRotateAnimatorListener) {
+        this.mRotateAnimatorListener = mRotateAnimatorListener;
+    }
+
     public interface RotateLayoutListener {
         void finishActivity();
+    }
+
+    public interface RotateAnimatorListener {
+        void rotateUpdate(float degree);
     }
 }
