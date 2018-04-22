@@ -619,7 +619,7 @@ public class RotateLayout extends LinearLayout {
         this.mRotateLayoutListener = rotateLayoutListener;
     }
 
-    public void setmRotateAnimatorListener(RotateAnimatorListener mRotateAnimatorListener) {
+    public void setRotateAnimatorListener(RotateAnimatorListener mRotateAnimatorListener) {
         this.mRotateAnimatorListener = mRotateAnimatorListener;
     }
 
