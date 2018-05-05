@@ -20,7 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.zml.libs.widget.**
--keepclassmembers class com.zml.libs.widget.** {
+-keep class com.zml.libs.widget.RotateLayout
+-keepclassmembers class com.zml.libs.widget.RotateLayout {
    public *;
 }

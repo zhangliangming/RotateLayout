@@ -3,7 +3,7 @@
 https://github.com/zhangliangming/HappyPlayer5.git 。
 
 # 日志 #
-## v1.9 ##
+## v2.0 ##
 1.添加混淆
 
 ## v1.8 ##
@@ -30,7 +30,7 @@ https://github.com/zhangliangming/HappyPlayer5.git 。
 2.app build.gradle
 
 `dependencies {
-	         compile 'com.github.zhangliangming:RotateLayout:v1.9'
+	         compile 'com.github.zhangliangming:RotateLayout:v2.0'
 	}`
 
 # 调用Demo #
