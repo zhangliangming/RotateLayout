@@ -3,8 +3,9 @@
 https://github.com/zhangliangming/HappyPlayer5.git 。
 
 # 日志 #
-## v2.1 ##
+## v2.2 ##
 1.添加混淆
+2.修复
 
 ## v1.8 ##
 1. 添加了旋转角度回调事件
@@ -30,7 +31,7 @@ https://github.com/zhangliangming/HappyPlayer5.git 。
 2.app build.gradle
 
 `dependencies {
-	         compile 'com.github.zhangliangming:RotateLayout:v2.1'
+	         compile 'com.github.zhangliangming:RotateLayout:v2.2'
 	}`
 
 # 调用Demo #
