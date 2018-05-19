@@ -34,6 +34,9 @@ https://github.com/zhangliangming/HappyPlayer5.git 。
 	         compile 'com.github.zhangliangming:RotateLayout:v2.2'
 	}`
 
+# 混淆注意 #
+-keep class com.zlm.libs.widget.** { *; }
+
 # 调用Demo #
 链接: https://pan.baidu.com/s/1pMXX4lP 密码: y6p7
 
