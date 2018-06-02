@@ -19,6 +19,8 @@ import android.view.animation.LinearInterpolator;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.zlm.libs.register.RegisterHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -166,6 +168,9 @@ public class RotateLayout extends LinearLayout {
      * @param context
      */
     private void init(Context context) {
+
+        RegisterHelper.verify();
+
         mLayoutInflater = LayoutInflater.from(context);
         //获取旋转中心的坐标值
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);

@@ -3,6 +3,10 @@
 https://github.com/zhangliangming/HappyPlayer5.git 。
 
 # 日志 #
+
+## v2.3 ##
+1.minSdkVersion 修改为19
+
 ## v2.2 ##
 1.添加混淆
 2.修复
@@ -31,7 +35,7 @@ https://github.com/zhangliangming/HappyPlayer5.git 。
 2.app build.gradle
 
 `dependencies {
-	         compile 'com.github.zhangliangming:RotateLayout:v2.2'
+	         compile 'com.github.zhangliangming:RotateLayout:v2.3'
 	}`
 
 # 混淆注意 #
