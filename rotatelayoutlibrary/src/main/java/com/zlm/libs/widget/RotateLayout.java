@@ -532,9 +532,14 @@ public class RotateLayout extends LinearLayout {
             return false;
         for (int i = 0; i < views.size(); i++) {
             View view = views.get(i);
-            Rect rect = new Rect(view.getLeft(), view.getTop(),
-                    view.getRight(), view.getBottom());
-            if (rect.contains((int) event.getX(), (int) event.getY())) {
+            int[] location = new int[2];
+            view.getLocationOnScreen(location);
+            int left = location[0];
+            int top = location[1];
+            int right = left + view.getWidth();
+            int bottom = top + view.getHeight();
+            Rect rect = new Rect(left, top, right, bottom);
+            if (rect.contains((int) event.getRawX(), (int) event.getRawY())) {
                 return true;
             }
         }
