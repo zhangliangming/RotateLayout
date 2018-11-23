@@ -12,6 +12,7 @@ import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
+import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.view.animation.LinearInterpolator;
 import android.widget.LinearLayout;
@@ -196,10 +197,17 @@ public class RotateLayout extends LinearLayout {
         mMaximumVelocity = configuration.getScaledMaximumFlingVelocity();
 
 
-        this.post(new Runnable() {
+        //获得ViewTreeObserver
+        final ViewTreeObserver observer = getViewTreeObserver();
+        //注册观察者，监听变化
+        observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
-            public void run() {
-                open();
+            public void onGlobalLayout() {
+                //判断ViewTreeObserver 是否alive，如果存活的话移除这个观察者
+                if (observer.isAlive()) {
+                    observer.removeGlobalOnLayoutListener(this);
+                    open();
+                }
             }
         });
     }
