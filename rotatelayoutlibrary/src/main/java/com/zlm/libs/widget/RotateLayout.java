@@ -197,19 +197,15 @@ public class RotateLayout extends LinearLayout {
         mMaximumVelocity = configuration.getScaledMaximumFlingVelocity();
 
 
-        //获得ViewTreeObserver
-        final ViewTreeObserver observer = getViewTreeObserver();
-        //注册观察者，监听变化
-        observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                //判断ViewTreeObserver 是否alive，如果存活的话移除这个观察者
-                if (observer.isAlive()) {
-                    observer.removeGlobalOnLayoutListener(this);
-                    open();
-                }
-            }
-        });
+        getViewTreeObserver().addOnGlobalLayoutListener(
+                new ViewTreeObserver.OnGlobalLayoutListener() {
+                    @Override
+                    public void onGlobalLayout() {
+                        getViewTreeObserver()
+                                .removeGlobalOnLayoutListener(this);
+                        open();
+                    }
+                });
     }
 
     @Override
